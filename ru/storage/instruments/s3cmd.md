@@ -89,3 +89,15 @@ s3cmd get s3://bucket/object local_file
 ```bash
 s3cmd del s3://bucket/object
 ```
+
+### Получить список частичных загрузок
+
+```bash
+s3cmd multipart s3://bucket/object
+```
+
+### Удалить частично загруженный объект
+
+```bash
+s3cmd abortmp s3://bucket/object	multipart_id
+```
